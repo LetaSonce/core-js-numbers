@@ -6,6 +6,8 @@ describe('core-js-numbers', () => {
   it.optional('getRectangleArea should return a square of rectangle', () => {
     assert.equal(tasks.getRectangleArea(5, 10), 50);
     assert.equal(tasks.getRectangleArea(5, 5), 25);
+    assert.equal(tasks.getRectangleArea(5.5, 3.5), 19.25);
+    assert.equal(tasks.getRectangleArea(7.52, 3.56), 26.7712);
   });
 
   it.optional(
